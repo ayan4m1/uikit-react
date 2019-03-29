@@ -1,5 +1,5 @@
-const path = require('path');
 const TSDocgenPlugin = require('react-docgen-typescript-webpack-plugin');
+
 module.exports = (baseConfig, env, defaultConfig) => {
   defaultConfig.module.rules.push({
     test: /\.(ts|tsx)$/,
