@@ -20,9 +20,9 @@
   "author": "Alex Lopez",
   "license": "ISC",
   "peerDependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "uikit": "^3.0.0-rc.5"
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "uikit": "^3.x"
   },
   "devDependencies": {
     "@storybook/addon-info": "^5.0.5",
