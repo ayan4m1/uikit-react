@@ -8,8 +8,9 @@
 
 ## Get Started
 **NPM**
+
 ```
-npm install uikit-react --save
+npm install uikit-react
 ```
 **Yarn**
 ```
