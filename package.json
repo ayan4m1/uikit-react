@@ -75,30 +75,5 @@
     "@types/jest": "^23.3.0",
     "jest": "^23.4.1",
     "ts-jest": "^23.0.1"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testMatch": [
-      "<rootDir>/src/**/__tests__/**/*.{js,tsx}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,tsx}"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/lib/"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|scss)$": "identity-obj-proxy"
-    },
-    "setupFiles": [
-      "<rootDir>/config/polyfills.js"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json"
-    ]
   }
 }
