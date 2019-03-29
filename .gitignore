@@ -1,8 +1,5 @@
 .DS_Store
-node_modules
-.rpt2_cache
-
-.idea/workspace.xml
-.idea
-
-
+.idea/
+.nyc_output/
+coverage/
+node_modules/
