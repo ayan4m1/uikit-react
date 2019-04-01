@@ -11,8 +11,8 @@ export class Heading extends React.Component<HeadingProps, any> {
     return React.createElement(
       element ? element : 'h1',
       {
-        id: id ? id : null,
-        style: style ? style : null,
+        id: id ? id : undefined,
+        style: style ? style : undefined,
         className: this.setClassNames(),
       },
       newChildren ? newChildren : '',
@@ -23,8 +23,8 @@ export class Heading extends React.Component<HeadingProps, any> {
     const { type, divider, bullet, line } = this.props
 
     return classNames({
-      [`uk-heading-primary`]: type === 'primary',
-      [`uk-heading-hero`]: type === 'primary',
+      'uk-heading-primary': type === 'primary',
+      [`uk-heading-hero`]: type === 'hero',
       [`uk-heading-divider`]: !!divider,
       [`uk-heading-bullet`]: !!bullet,
       [`uk-heading-line`]: !!line,
