@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading> Should render as hero 1`] = `
+<h1
+  className="uk-heading-hero "
+>
+  Test
+</h1>
+`;
+
+exports[`<Heading> Should render as primary 1`] = `
+<h1
+  className="uk-heading-primary "
+>
+  Test
+</h1>
+`;
+
+exports[`<Heading> Should render with bullet 1`] = `
+<h1
+  className="uk-heading-bullet "
+>
+  Test
+</h1>
+`;
+
+exports[`<Heading> Should render with divider 1`] = `
+<h1
+  className="uk-heading-divider "
+>
+  Test
+</h1>
+`;
+
+exports[`<Heading> Should render with line 1`] = `
+<h1
+  className="uk-heading-line "
+>
+  <span>
+    Test
+  </span>
+</h1>
+`;
+
+exports[`<Heading> Should render with props 1`] = `
+<h4
+  className=""
+  id="test"
+  style={
+    Object {
+      "marginTop": 10,
+    }
+  }
+>
+  Test
+</h4>
+`;
+
+exports[`<Heading> Should render without props 1`] = `
+<h1
+  className=""
+>
+  Test
+</h1>
+`;
