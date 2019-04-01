@@ -123,6 +123,15 @@ interface GridProps extends BaseContainerProps {
   options?: string
 }
 
+interface HeadingProps extends BaseProps {
+  element: string
+  type: 'default' | 'primary' | 'hero'
+  children: string | JSX.Element
+  divider?: boolean
+  bullet?: boolean
+  line?: boolean
+}
+
 interface IconProps extends BaseProps {
   options: string
   href?: string
