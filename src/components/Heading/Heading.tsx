@@ -4,16 +4,18 @@ import { setClassNames } from '../../utils/set-class-names'
 
 export class Heading extends React.Component<HeadingProps, any> {
   render() {
-    const { id, style, children, element } = this.props
+    const { id, style, children, line, element } = this.props
+
+    const newChildren = line ? <span>{children}</span> : children
 
     return React.createElement(
-      element,
+      element ? element : 'h1',
       {
         id: id ? id : null,
         style: style ? style : null,
         className: this.setClassNames(),
       },
-      children,
+      newChildren ? newChildren : '',
     )
   }
 
