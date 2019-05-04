@@ -1,12 +1,12 @@
-import * as React from 'react'
-import classNames from 'classnames'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import classNames from 'classnames';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Heading extends React.Component<HeadingProps, any> {
   render() {
-    const { id, style, children, line, element } = this.props
+    const { id, style, children, line, element } = this.props;
 
-    const newChildren = line ? <span>{children}</span> : children
+    const newChildren = line ? <span>{children}</span> : children;
 
     return React.createElement(
       element ? element : 'h1',
@@ -16,11 +16,11 @@ export class Heading extends React.Component<HeadingProps, any> {
         className: this.setClassNames(),
       },
       newChildren ? newChildren : '',
-    )
+    );
   }
 
   private setClassNames() {
-    const { type, divider, bullet, line } = this.props
+    const { type, divider, bullet, line } = this.props;
 
     return classNames({
       'uk-heading-primary': type === 'primary',
@@ -29,6 +29,6 @@ export class Heading extends React.Component<HeadingProps, any> {
       [`uk-heading-bullet`]: !!bullet,
       [`uk-heading-line`]: !!line,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

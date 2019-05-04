@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export const AccordionItem: React.SFC<AccordionItemProps> = ({ title, children, ...rest }) => (
   <li {...rest}>
@@ -7,6 +7,6 @@ export const AccordionItem: React.SFC<AccordionItemProps> = ({ title, children, 
     </a>
     <div className="uk-accordion-content">{children}</div>
   </li>
-)
+);
 
-export default AccordionItem
+export default AccordionItem;

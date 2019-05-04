@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class NavItem extends React.Component<NavItemProps, any> {
   render() {
@@ -13,7 +13,7 @@ export class NavItem extends React.Component<NavItemProps, any> {
       >
         {this.props.children}
       </li>
-    )
+    );
   }
 
   private setClassNames(): string {
@@ -21,6 +21,6 @@ export class NavItem extends React.Component<NavItemProps, any> {
       [`uk-nav-${this.props.type}`]: !!this.props.type,
       [`uk-parent`]: this.props.parent,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

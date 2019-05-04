@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Dropdown extends React.Component<DropdownProps, any> {
   render() {
@@ -13,6 +13,6 @@ export class Dropdown extends React.Component<DropdownProps, any> {
           {this.props.children}
         </ul>
       </div>
-    )
+    );
   }
 }

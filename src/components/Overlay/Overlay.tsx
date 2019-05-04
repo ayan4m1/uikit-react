@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Overlay extends React.Component<OverlayProps, any> {
   render() {
@@ -13,7 +13,7 @@ export class Overlay extends React.Component<OverlayProps, any> {
       >
         {this.props.showIcon ? <span uk-overlay-icon /> : null}
       </div>
-    )
+    );
   }
 
   private setClassNames() {
@@ -21,6 +21,6 @@ export class Overlay extends React.Component<OverlayProps, any> {
       [`uk-position-${this.props.position}`]: !!this.props.position,
       [`uk-position-${this.props.type}`]: !!this.props.type,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

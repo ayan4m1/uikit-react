@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Nav extends React.Component<NavProps, any> {
   render() {
@@ -14,7 +14,7 @@ export class Nav extends React.Component<NavProps, any> {
       >
         {this.props.children}
       </ul>
-    )
+    );
   }
 
   setClassNames() {
@@ -24,6 +24,6 @@ export class Nav extends React.Component<NavProps, any> {
       [`uk-nav-sub`]: this.props.child,
       [`uk-nav-parent-icon`]: this.props.accordion,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

@@ -1,8 +1,8 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
+import * as React from 'react';
+import * as _classNames from 'classnames';
 
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Slideshow extends React.Component<SlideshowProps, any> {
   render() {
@@ -15,7 +15,7 @@ export class Slideshow extends React.Component<SlideshowProps, any> {
       >
         {this.setNavigation()}
       </div>
-    )
+    );
   }
 
   private setNavigation() {
@@ -36,16 +36,16 @@ export class Slideshow extends React.Component<SlideshowProps, any> {
             uk-slideshow-item="next"
           />
         </div>
-      )
+      );
     }
-    return <ul className="uk-slideshow-items">{this.props.children}</ul>
+    return <ul className="uk-slideshow-items">{this.props.children}</ul>;
   }
 
   private setNavigationStyle() {
     if (this.props.navigation && this.props.navigationStyle) {
-      return `uk-${this.props.navigationStyle}`
+      return `uk-${this.props.navigationStyle}`;
     }
 
-    return `uk-dark`
+    return `uk-dark`;
   }
 }

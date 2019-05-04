@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Flex extends React.Component<FlexProps, any> {
   render() {
@@ -13,11 +13,11 @@ export class Flex extends React.Component<FlexProps, any> {
       >
         {this.props.children}
       </div>
-    )
+    );
   }
 
   private setClassNames(): string {
-    const alignments = this.props.alignment ? this.props.alignment.split(' ') : []
+    const alignments = this.props.alignment ? this.props.alignment.split(' ') : [];
 
     return classNames({
       [`uk-flex-${alignments[0]}`]: !!alignments[0],
@@ -25,6 +25,6 @@ export class Flex extends React.Component<FlexProps, any> {
       [`uk-flex-${this.props.direction}`]: !!this.props.direction,
       [`uk-flex-${this.props.wrap}`]: !!this.props.wrap,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

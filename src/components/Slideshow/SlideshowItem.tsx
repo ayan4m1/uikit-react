@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class SlideshowItem extends React.Component<SlideshowItemProps, any> {
   render() {
@@ -11,12 +11,12 @@ export class SlideshowItem extends React.Component<SlideshowItemProps, any> {
       >
         {this.renderBasedOnType()}
       </li>
-    )
+    );
   }
 
   private renderBasedOnType() {
     if (this.props.type === 'image') {
-      return <img src={this.props.src} alt={this.props.alt} uk-cover="" />
+      return <img src={this.props.src} alt={this.props.alt} uk-cover="" />;
     }
     if (this.props.type === 'video') {
       return (
@@ -29,8 +29,8 @@ export class SlideshowItem extends React.Component<SlideshowItemProps, any> {
         >
           <source src={this.props.src} type={`${this.props.type}/${this.props.videoFormat}`} />
         </video>
-      )
+      );
     }
-    console.error('Type property on cover component must be either video or image')
+    console.error('Type property on cover component must be either video or image');
   }
 }

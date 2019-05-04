@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Card extends React.Component<CardProps, any> {
   render() {
@@ -13,7 +13,7 @@ export class Card extends React.Component<CardProps, any> {
       >
         {this.props.children}
       </div>
-    )
+    );
   }
 
   private setClassNames(): string {
@@ -23,6 +23,6 @@ export class Card extends React.Component<CardProps, any> {
       [`uk-card-hover`]: this.props.hover,
       [`uk-card-${this.props.size}`]: !!this.props.size,
       [setClassNames(this.props)]: true,
-    })
+    });
   }
 }

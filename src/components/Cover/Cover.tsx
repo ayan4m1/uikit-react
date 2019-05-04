@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Cover extends React.Component<CoverProps, any> {
   render() {
@@ -12,12 +12,12 @@ export class Cover extends React.Component<CoverProps, any> {
         {this.renderResponsiveMode()}
         {this.renderBasedOnType()}
       </div>
-    )
+    );
   }
 
   private renderResponsiveMode() {
     if (this.props.responsive) {
-      return <canvas width={this.props.width} height={this.props.height} />
+      return <canvas width={this.props.width} height={this.props.height} />;
     }
   }
 
@@ -31,7 +31,7 @@ export class Cover extends React.Component<CoverProps, any> {
           height={this.props.height}
           data-uk-cover={''}
         />
-      )
+      );
     }
     if (this.props.type === 'video') {
       return (
@@ -46,8 +46,8 @@ export class Cover extends React.Component<CoverProps, any> {
         >
           <source src={this.props.src} type={`${this.props.type}/${this.props.videoFormat}`} />
         </video>
-      )
+      );
     }
-    console.error('Type property on cover component must be either video or image')
+    console.error('Type property on cover component must be either video or image');
   }
 }

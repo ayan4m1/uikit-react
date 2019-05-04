@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Section extends React.Component<SectionProps, any> {
   render() {
@@ -13,7 +13,7 @@ export class Section extends React.Component<SectionProps, any> {
       >
         {this.props.children}
       </div>
-    )
+    );
   }
 
   private setClassNames(): string {
@@ -24,6 +24,6 @@ export class Section extends React.Component<SectionProps, any> {
       [`uk-preserve-color`]: this.props.preserveColor,
       [setClassNames(this.props)]: true,
       [`uk-position-${this.props.position}`]: !!this.props.position,
-    })
+    });
   }
 }

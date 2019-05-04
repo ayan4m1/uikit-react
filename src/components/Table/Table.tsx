@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Table extends React.Component<TableProps, any> {
   render() {
@@ -13,7 +13,7 @@ export class Table extends React.Component<TableProps, any> {
       >
         {this.props.children}
       </table>
-    )
+    );
   }
 
   private setClassNames(): string {
@@ -26,6 +26,6 @@ export class Table extends React.Component<TableProps, any> {
       [`uk-overflow-auto`]: this.props.responsive,
       [`uk-table-${this.props.size}`]: !!this.props.size,
       [`${setClassNames(this.props)}`]: true,
-    })
+    });
   }
 }

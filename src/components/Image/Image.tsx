@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 export class Image extends React.Component<ImageProps, any> {
   render() {
@@ -12,6 +12,6 @@ export class Image extends React.Component<ImageProps, any> {
         data-src={this.props.src}
         data-uk-img={this.props.options ? this.props.options : ''}
       />
-    )
+    );
   }
 }

@@ -1,7 +1,7 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
+import { setClassNames } from '../../utils/set-class-names';
 
 export class NavbarContainer extends React.Component<NavbarContainerProps, any> {
   render() {
@@ -17,13 +17,13 @@ export class NavbarContainer extends React.Component<NavbarContainerProps, any> 
         </nav>
         {this.props.dropbar ? <div className="uk-navbar-dropbar" /> : null}
       </div>
-    )
+    );
   }
 
   private setClassNames(): string {
     return classNames('uk-navbar-container', {
       [`uk-navbar-transparent`]: this.props.transparent,
       [setClassNames(this.props)]: true,
-    })
+    });
   }
 }

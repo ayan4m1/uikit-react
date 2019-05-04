@@ -1,8 +1,8 @@
-import * as React from 'react'
-import * as _classNames from 'classnames'
-const classNames = _classNames
+import * as React from 'react';
+import * as _classNames from 'classnames';
+const classNames = _classNames;
 
-import { setClassNames } from '../../utils/set-class-names'
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Container extends React.Component<ContainerProps, any> {
   render() {
@@ -14,7 +14,7 @@ export class Container extends React.Component<ContainerProps, any> {
       >
         {this.props.children}
       </div>
-    )
+    );
   }
 
   private setClassNames(): string {
@@ -22,6 +22,6 @@ export class Container extends React.Component<ContainerProps, any> {
       [`uk-container`]: true,
       [`uk-container-${this.props.size}`]: !!this.props.size,
       [setClassNames(this.props)]: true,
-    })
+    });
   }
 }

@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Lightbox extends React.Component<LightboxProps, any> {
   render() {
@@ -12,6 +12,6 @@ export class Lightbox extends React.Component<LightboxProps, any> {
       >
         {this.props.children}
       </div>
-    )
+    );
   }
 }

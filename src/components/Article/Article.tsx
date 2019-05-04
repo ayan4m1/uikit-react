@@ -1,5 +1,5 @@
-import * as React from 'react'
-import { setClassNames } from '../../utils/set-class-names'
+import * as React from 'react';
+import { setClassNames } from '../../utils/set-class-names';
 
 export class Article extends React.Component<ArticleProps, any> {
   render() {
@@ -17,6 +17,6 @@ export class Article extends React.Component<ArticleProps, any> {
         {this.props.lead ? <p className="uk-text-lead">{this.props.lead}</p> : ''}
         <div>{this.props.children}</div>
       </article>
-    )
+    );
   }
 }
